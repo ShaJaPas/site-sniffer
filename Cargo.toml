@@ -1,0 +1,12 @@
+[package]
+name = "site-sniffer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bytes = "1.3.0"
+dns-message-parser = "0.7.0"
+pnet = { version = "0.31.0", features = ["pnet_datalink", "std"] }
+
+[profile.release]
+strip = true
